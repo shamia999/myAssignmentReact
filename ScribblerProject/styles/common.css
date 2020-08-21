@@ -1,0 +1,44 @@
+
+.container
+{
+    display:table;
+}
+.row
+{
+width:1800px;
+}
+
+#leftcolumn
+{
+background-color:red;
+width:40%;
+}
+#rightcolumn
+{
+
+width:45%;
+
+display:flex;
+align-items: flex-start;
+justify-content:flex-end;
+}
+button
+{
+    
+    border:none;
+    padding:5px;
+    width:100px;
+     background-color:blue;
+     color:white;
+    
+    }
+
+#subcontainer
+{
+    margin:10px 100px 10px 2.5px;
+}
+.divider
+{
+    width:6px;
+
+}
