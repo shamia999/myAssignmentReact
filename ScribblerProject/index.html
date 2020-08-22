@@ -5,6 +5,7 @@
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="/styles/index.css">
     <link rel="stylesheet" type="text/css" href="/styles/common.css">
@@ -22,7 +23,7 @@
 
     <div class="column" id="leftcolumn">
        <p id="scribbler"> <a id="scribbler1" class="logo-title">ScriBBler </a></p>
-        <p>Explore, <span class="divider"></span> <span>Imagine, </span><span class="divider"></span>  <span> Create</span></p>
+        <p class="sub-heading">Explore, <span class="divider"></span> <span>Imagine, </span><span class="divider"></span>  <span> Create</span></p>
     </div>
 <!--left column over-->
 <!--right col start-->
@@ -86,20 +87,18 @@
  <span aria-hidden="true">&times;</span>
      </button>
     </div>
-
+<!--modal body starts-->
      <div class="modal-body">
          <form>
         <div class="form-group">
         <label for="recipient-name">Username</label>
         <input type="text" class="form-control" id="recipient-name" placeholder="Enter your name">
         </div>
-                    
         <div class="form-group">
         <label for="password">Password</label>
         <input type="text" class="form-control" id="Password"placeholder="Enter your Password">
         </div>
         <button type="submit" class="btn btn-success" id="signinbutton">Sign In</button>
-
 </form>
 </div>
 <!--modal body over-->
@@ -113,11 +112,46 @@
       </div>
       </div><!--right colmn-->
       </div> <!--div row-->
-<section id="section1"style="background-color: chartreuse;">
+<section id="section1">
     <div class="centercontainer">
         <button class="btn11" onclick="document.location='/html/bloglist.html'"> All Posts</button>
-        <button class="btn11">Create Post</button>
-    </div>  
+       <!-- modal for the post-->
+        <button type="button" data-toggle="modal" data-target="#modal3" class="btn11">Create Post</button>
+    </div>
+    <!--modal3 starts-->
+    
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+<!--modal header-->
+
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Pin Your Post</h5>
+ <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+ <span aria-hidden="true">&times;</span>
+     </button>
+    </div>
+
+
+    <div class="modal-body">
+        <form class="form3">
+       <div class="form-group">
+       <label for="post-name">Title</label>
+       <input type="text" class="form-control" id="recipient-name" placeholder="Enter title of your post">
+       </div>
+       <div class="form-group">
+       <label for="content">Contents</label>
+       <textarea class="form-control" style="min-height:100%" id="content"placeholder="Enter content of your Post"></textarea>
+       </div>
+       <button type="submit" class="btn btn-success" id="createbutton">create</button>
+    </form>
+</div>
+
+<!--footer-->
+<div class="modal-footer">
+
+</div>
 </section>
 </div>
 </body>

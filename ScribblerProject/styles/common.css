@@ -10,7 +10,7 @@ width:1800px;
 
 #leftcolumn
 {
-background-color:red;
+
 width:45%;
 
 
@@ -73,4 +73,8 @@ button
     color:blue;
     text-decoration: none;
     margin:auto;
+}
+.sub-heading
+{
+    font-family:'Ubunto Mono','monospace';
 }
