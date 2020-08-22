@@ -4,13 +4,16 @@
 <head>
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
-    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="/styles/index.css">
     <link rel="stylesheet" type="text/css" href="/styles/common.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 <body>
 <div class="container">
@@ -18,25 +21,105 @@
 <div class="row" id="subcontainer">
 
     <div class="column" id="leftcolumn">
-        <span>Scribbler</span>
-        <p><span>Explore, </span> <span class="divider"></span> <span>Imagine, </span><span class="divider"></span>  <span> Create</span></p>
+       <p id="scribbler"> <a id="scribbler1" class="logo-title">ScriBBler </a></p>
+        <p>Explore, <span class="divider"></span> <span>Imagine, </span><span class="divider"></span>  <span> Create</span></p>
+    </div>
+<!--left column over-->
+<!--right col start-->
+     <div class="column" id="rightcolumn">
+    <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#modal1">Sign Up </button>
+    <span class="divider"></span>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2"> Sign In</button>
+<!--modal starts-->
+   <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <!--modal header-->
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Get Started</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!--modal header over-->
+      <div class="modal-body">
+        <form>
+                <div class="form-group">
+                  <label for="recipient-name">Name</label>
+                  <input type="text" class="form-control" id="recipient-name" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="Username">Username</label>
+                    <input type="text" class="form-control" id="Username"placeholder="Enter your Username">
+                  </div>
+
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                <label for="exampleInputPassword2">Confirm Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Re-Enter your Password">
+                </div>
+
+                <button type="submit" class="btn btn-success" id="signupbutton">Sign Up</button>
+                
+            </form>
+            </div>
+            <!--modal body-->
+      
+                <div class="modal-footer">
+                </div>
+
+                </div>
+                </div>
+                </div>
+<!--second modal starts-->
+ <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+<!--modal header starts-->
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Welcome Back!</h5>
+ <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+ <span aria-hidden="true">&times;</span>
+     </button>
     </div>
 
-     <div class="column" id="rightcolumn">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="modal1">Sign Up <span class="divider"></span></button>
-    <span class="divider"></span>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="modal2"> Sign In</button>
+     <div class="modal-body">
+         <form>
+        <div class="form-group">
+        <label for="recipient-name">Username</label>
+        <input type="text" class="form-control" id="recipient-name" placeholder="Enter your name">
+        </div>
+                    
+        <div class="form-group">
+        <label for="password">Password</label>
+        <input type="text" class="form-control" id="Password"placeholder="Enter your Password">
+        </div>
+        <button type="submit" class="btn btn-success" id="signinbutton">Sign In</button>
+
+</form>
+</div>
+<!--modal body over-->
+     <div class="modal-footer">
+    <span id="footer1">Not a member?</span>
+    <span id="footer2"><a data-toggle="modal" href="#modal1">Sign Up</a></span>
+   </div>
+
     </div>
-    </div>
-<section>
+     </div>  
+      </div>
+      </div><!--right colmn-->
+      </div> <!--div row-->
+<section id="section1"style="background-color: chartreuse;">
     <div class="centercontainer">
-        <button class="btn1">All Posts</button>
-        <button class="btn1">Create Post</button>
+        <button class="btn11" onclick="document.location='/html/bloglist.html'"> All Posts</button>
+        <button class="btn11">Create Post</button>
     </div>  
 </section>
 </div>
 </body>
 <!-- TODO: Include all your code for the header and home page here -->
-
-
 </html>
