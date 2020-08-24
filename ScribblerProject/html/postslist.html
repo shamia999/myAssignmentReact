@@ -121,10 +121,10 @@
  </div> <!--right column-->
 </div> <!--sub container-->
       <!-- list of all posts starts here -->
-    <div class="divContainer" style="background-color:chartreuse">
+    <div class="divContainer">
 
         <!-- post 1 starts here -->
-
+        <div class="row" id="firstdiv">
         <div class="showPost" id="post1">
         
          <div class="author">
@@ -136,7 +136,7 @@
                     <p class="leftOfHead">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p> 
                     <span class=rightOfHead>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
-                        <i class="fas fa-trash" data-toggle="modal" data-target="#modal4"></i>
+                        <i  id="hand" class="fas fa-trash" data-toggle="modal" data-target="#modal4"></i>
 
                         <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
@@ -187,7 +187,7 @@
                 <div class="headerContent">
                     <p class="leftOfHead">What is linting and how can it save you time?</p>
                     <span class="rightOfHead">
-                   <i class="fas fa-trash" data-toggle="modal" data-target="#modal5"></i>
+                   <i id="hand" class="fas fa-trash" data-toggle="modal" data-target="#modal5"></i>
 
                    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                        <div class="modal-dialog" role="document">
@@ -226,8 +226,9 @@
                 </span>
             </div>
         </div>
+        </div>
         <!-- post 2 ends here -->
-
+<div class="row" id="second">
         <!-- post 3 starts here -->
         <div class="showPost" id="post3">
             <div class="author">
@@ -239,9 +240,9 @@
                     <p class="leftOfHead" >How to Get More Views on Your Tech Blog</p>
                     <span class="rightOfHead">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
-                        <i class="fas fa-trash" data-toggle="modal" data-target="#modal5"></i>
+                        <i id="hand"class="fas fa-trash" data-toggle="modal" data-target="#modal6"></i>
 
-                        <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                            <div class="modal-content">
 
@@ -260,7 +261,7 @@
 </div>
 
 <div class="modal-footer">
-    <button type="submit" class="btn btn-success"  onclick="deletee('post3')">Yes</button>
+    <button type="submit" class="btn btn-success" onclick="deletee('post3')">Yes</button>
     <button type="submit" class="btn btn-danger" onclick="deleteNo('post3')">No</button>
 </div>
 
@@ -280,7 +281,7 @@
         <!-- post 3 ends here -->
 
         <!-- post 4 starts here -->
-        <div class="showPost">
+        <div class="showPost" id="post4">
             <div class="author">
                 <p>Cedd Burge</p>
             </div>
@@ -289,7 +290,7 @@
                 <div class="headerContent">
                     <p class="leftOfHead">How to write easily describable code</p>
                     <span class="rightOfHead">
-                        <i class="fas fa-trash" data-toggle="modal" data-target="#modal7"></i>
+                        <i id="hand" class="fas fa-trash" data-toggle="modal" data-target="#modal7"></i>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
 
                         <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -329,9 +330,10 @@
             </div>
         </div>
         <!-- post 4 ends here -->
-
+</div>
+<div class="row" id="five">
         <!-- post 5 starts here -->
-        <div class="showPost">
+        <div class="showPost" id="post5">
             <div class="author">
                 <p>Srishti Gupta</p>
             </div>
@@ -341,7 +343,7 @@
                     <p class="leftOfHead">Everything you should know about ‘module’ & ‘require’ in Node.js</p>
                     <span class="rightOfHead">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
-                   <i class="fas fa-trash" data-toggle="modal" data-target="#moal8"></i>
+                   <i id="hand"class="fas fa-trash" data-toggle="modal" data-target="#modal8"></i>
 
 
 
@@ -365,8 +367,8 @@
 </div>
 
 <div class="modal-footer">
-<button type="submit" class="btn btn-success"  onclick="deletee('post4')">Yes</button>
-<button type="submit" class="btn btn-danger" onclick="deleteNo('post4')">No</button>
+<button type="submit" class="btn btn-success" onclick="deletee('post5')">Yes</button>
+<button type="submit" class="btn btn-danger" onclick="deleteNo('post5')">No</button>
 </div>
 
 </div>
@@ -383,7 +385,7 @@
             </div>
         </div>
         <!-- post 5 ends here -->
-
+</div>
         <!-- TODO: Write code for delete post modal here -->
 
     </div>
