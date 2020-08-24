@@ -1,0 +1,36 @@
+.centerHeader
+{
+    height:100vh;
+    
+}
+.secondHeader
+{
+     text-align:center;
+    
+    justify-content: center;
+    align-items: center;
+}
+#editDiv
+{
+    display: flex;
+    flex-direction: row;
+}
+#name
+{
+    width:50%;
+    position: relative;
+    left:14px;
+}
+#btn
+{
+    width:50%;
+    position: relative;
+    left:600px;
+    
+}
+#data
+    
+    {padding:2%;
+        margin:10px;
+         text-align:justify;
+}

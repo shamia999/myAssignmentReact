@@ -1,6 +1,7 @@
 .container
 {
     background-color:#ffeedd;
+    
 }
 .showPost
 {
@@ -51,8 +52,8 @@ display:flex;
 
 position: relative;
 left:300px;
-justify-items: flex-end;
-align-content: flex-start
+justify-items:flex-end;
+align-content:flex-start;
 
 }
 .leftOfHead
@@ -78,4 +79,13 @@ margin-left:20px;
 {
     justify-content:center;
 
+
+}
+#firstdiv
+{
+    margin:70px;
+}
+#second
+{
+    margin:70px;
 }

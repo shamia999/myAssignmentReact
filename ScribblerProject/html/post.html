@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="/styles/common.css">
+    <link rel="stylesheet" type="text/css" href="/styles/post.css">
+    <link rel="stylesheet" type="text/css" href="/styles/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row" id="subcontainer">
+      
+      <div class="column" id="leftcolumn">
+          <p id="scribbler"> <a id="scribbler1" class="logo-title">ScriBBler </a></p>
+          <p class="sub-heading">Explore, <span class="divider"></span> <span>Imagine, </span><span class="divider"></span>  <span> Create</span></p>
+     </div><!--leftcolumn-->
+      <div class="column" id="rightcolumn">
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal11">SignUp</button>
+        <span class="divider"></span>   
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal12">SignIn</button>
+        <!--modal starts-->
+        <div class="modal fade" id="modal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+           <div class="modal-content">
+         <!--modal header-->
+            
+                           <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Get Started</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+                           </div> 
+                          <!--modal body-->
+                           <div class="modal-body">
+                               <form>
+                      <div class="form-group">
+                          <label for="recipient-name">Name</label>
+                          <input type="text" class="form-control" id="recipient-name"  required="required" placeholder="Enter Your name">
+                      </div>             
+                 
+                      <div class="form-group">
+                         <label for="Username">Username</label>
+                         <input type="text" class="form-control" id="recipient-name"  required="required" placeholder="Enter Your Username">
+                     </div>
+                 
+                     <div class="form-group">
+                         <label for="exampleInputPassword1">Password</label>
+                         <input type="password" class="form-control" id="exampleInputPassword1"  required="required" placeholder="Enter Your Password">
+                     </div>
+                 
+                     <div class="form-group">
+                         <label for="exampleInputPassword2">Confirm Password</label>
+                         <input type="password" class="form-control" id="exampleInputPassword2"  required="required" placeholder="Enter Your Password">
+                     </div>
+                 <button type="submit" class="btn btn-success" id="signupbutton">SignUp</button>
+                  </form>
+                           </div>
+                   <div class="modal-footer">
+                 
+                   </div>
+                   </div>
+                   </div>
+                   </div>
+
+                   <div class="modal fade" id="modal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                <!--modal header starts-->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Welcome Back!</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                         </button>
+                        </div>                
+                        <div class="modal-body">
+                            <form>
+                           <div class="form-group">
+                           <label for="recipient-name">Username</label>
+                           <input type="text" class="form-control" id="recipient-name" required="required" placeholder="Enter your name">
+                           </div>
+                           <div class="form-group">
+                           <label for="password">Password</label>
+                           <input type="text" class="form-control" id="Password" required="required" placeholder="Enter your Password">
+                           </div>
+                           <button type="submit" class="btn btn-success" id="signinbutton">Sign In</button>
+                   </form>
+                   </div>
+                   <div class="modal-footer">
+                    <span id="footer1">Not a member?</span>
+                    <span id="footer2"><a data-toggle="modal" href="#modal11">Sign Up</a></span>
+                   </div>
+                   </div>
+                   </div>
+                   </div>
+                
+ </div> <!--right column-->
+</div>
+</div>
+<div class="centerHeader">
+    <div class="secondHeader">
+<h3><p>Everything you should know about ‘module’ & ‘require’ in Node.js</p></h3>
+</div>
+<div id="editDiv" class="row">
+<span id="name" class="column">Srishti Gupta</span>
+<span id="btn" class="column"> <button type="button" class="btn btn-danger">Edit</button>
+</span>
+</div>
+<div>
+<p class="data">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
+    named xyz.
+
+    Let’s take an example to understand this better.
+    
+    You have a file named circle.js which consists of the logic for calculating the area & the circumference of a circle of a given radius, as given below:
+    
+    circle.js
+    
+    You can call circle.js file a module named circle.
+    
+    You might be wondering why is there a neneed to have multiple modules? You could have just written all the code in a single module. Well, it is very important to write modular code. By modular, I mean to say that your code should be independent and should be loosely coupled. Imagine that there’s a large application and you have all your code written in just one place, just one file. Too messy, right?
+
+    How does the code written inside a module run?Before executing the code written inside a module, Node takes the entire code and encloses it within a function wrapper. The syntax of this function wrapper is:
+    The function wrapper for the circle module will look like the one given below:
+
+    You can see that there is a function wrapper at the root level encompassing all the code written inside the circle module.
+    
+    The entire code written inside a module is private to the module, unless explicitly stated (exported) otherwise.
+    This is the most significant advantage of having modules in Node.js. Even if you define a global variable in a module using var, let or const keywords, the variables are scoped locally to the module rather than being scoped globally. This happens because each module has a function wrapper of its own and the code written inside one function is local to that function and cannot be accessed outside this function.
+    
+    
+    Code.Imagine that there are two modules — A and B. The code written inside the module A is enclosed within the function wrapper corresponding to the module A. Similar thing happens with the code written inside the module B. Because the code pertaining to both the modules is enclosed within different functions, these functions will not be able to access the code of each other. (Remember each function in JavaScript has its own local scope?) This is the reason why module A cannot access the code written inside module B and vice-versa.
+
+    The five parameters — exports, require, module, __filename, __dirname are available inside each module in Node. Though these parameters are global to the code within a module yet they are local to the module (because of the functionLet’s revisit the circle module, which you looked at earlier. There are three constructs defined in this module — a constant variable PI, a function named calculateArea and another function named calculateCircumference. An important point to keep in mind is that all these constructs are private to the circle module by default. It means that you cannot use these constructs in any other module unless explicitly specified.
+
+    So, the question that arises now is how do you specify something in a module that can be used by some other module? This is when the module & require parameters of the function wrapper are helpful. Let’s discuss these two parameters in this article.
+    
+    module
+    
+</p>
+<div class="likeBlog">
+<button type="button" class="btn btn-danger" id="btn1"onclick="likeit()">Like</button>
+<span id="msg">Be the first to like this</span>
+</div>
+</div>
+</div>
+<input type="textarea" placeholder="add your comments" id="userComments" value="">
+
+<button id="addList" onclick="addComments(userComments)">Comments</button>
+<div id="addEvent"></div>
+</div>
+<script src="/scripts/post.js"></script>
+</body>
+</html>
