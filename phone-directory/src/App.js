@@ -15,7 +15,9 @@ class App extends Component {
     );
   }
 }
- export default App;
+ 
+
+export default App;
 /* TODO 5: Create 'App' as a class component which encompasses all other components in the following order:
   1. Header
   2. Password
