@@ -11,15 +11,12 @@
     
     // TODO 1: Create 'Header' as a functional component to display the heading text. Write necessary import statement(s) too.
 import React from 'react';
+import './Header.css';
 const Header=function()
 { 
-    const headerStyle={color:'white',
-    background:'#000',
-    padding:20,
-    textAlign:'center',
-    textTransform:'uppercase'};
+
      return(
-        <div style={headerStyle}>
+        <div className="header">
         Phone Directory
         </div>
         )
