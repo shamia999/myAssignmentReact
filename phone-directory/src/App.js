@@ -1,8 +1,21 @@
 import React, { Component } from 'react';
 import Header from "./Header";
+
 import "./App.css";
 class App extends Component {
-  render() {
+  render(){
+  let subscribers=[
+    {id:1,
+name:"Naila",
+phone:"9999999"
+
+    },
+    {id:2,
+      name:"razia",
+      phone:"8888888"
+    }
+]
+  
                                                                                 
     return (
       <div>
@@ -13,17 +26,15 @@ class App extends Component {
           <span className=" grid-item name-heading ">Name</span>
           <span className="  grid-item phone-heading">Phone</span>
      </div> 
-
-     <div className="grid-container">
-          <span className="grid-item">Naila</span>
-          <span className="grid-item">888888888</span>
-     </div> 
-
-
-     <div className="grid-container">
-          <span className="grid-item">Razia</span>
-          <span className="grid-item">9999999999</span>
-     </div> 
+{
+subscribers.map(sub =>{
+ return <div key= {sub.id} className="grid-container"> 
+    <span className="grid-item">{sub.name}</span>
+    <span className="grid-item">{sub.phone}</span>
+  </div>}
+  )}
+     
+          
 
 
 
