@@ -7,12 +7,26 @@ class App extends Component {
     return (
       <div>
          <Header/>
-         <div className="bodyContainer">
-           <button className="btn1">Add</button>
-         <div className="content">
-          <span className="name">Name</span>
-          <span className="phone">Phone</span>
+         <div className="component-body-container">
+           <button className="custom-btn add-btn">Add</button>
+         <div className="grid-container heading-container">
+          <span className=" grid-item name-heading ">Name</span>
+          <span className="  grid-item phone-heading">Phone</span>
      </div> 
+
+     <div className="grid-container">
+          <span className="grid-item">Naila</span>
+          <span className="grid-item">888888888</span>
+     </div> 
+
+
+     <div className="grid-container">
+          <span className="grid-item">Razia</span>
+          <span className="grid-item">9999999999</span>
+     </div> 
+
+
+
      </div>
       </div>
     );

@@ -1,38 +1,53 @@
-.bodyContainer
+.component-body-container
 {
-    background-color:burlywood;
-}
-.bodyContainer{
-    background-color:white;
-
-}
-.btn1{
-    margin:30px;
-    color:white;
-    padding:1%;
-    background-color: #4CAF50;
-    font-size: 18px;
-    width:9%;
-    border:none;
-    text-transform: uppercase;
-
-}
-
-.name
-{
-text-transform: uppercase;
-font-weight: bolder;
-color:gray;
-font-size: 20px;
-margin:44px;
-font-style: normal;
-
-}
-.phone
-{text-transform: uppercase;
-    font-weight: bolder;
-    color:gray;
-    font-size: 20px;
-    margin-left:598px;
+    padding:20px;
     
 }
+
+
+.custom-btn{
+    padding:10px;
+    
+    color:white;
+    padding:10px;
+    font-size:0.9rem;
+    width:80px;
+    border:none;
+    text-transform: uppercase;
+     margin-right:10px;
+     cursor:pointer;
+      outline: none;
+}
+.add-btn
+{
+    background-color: #7ab97a;
+    color:#fff;
+}
+.grid-container
+{
+    display: grid;
+    grid-template-columns:40% 30% auto;
+    margin-bottom:10px;
+    
+}
+.heading-container
+{
+    margin:30px 0 30px 0;
+    width:100%;
+}
+.grid-item
+{
+    background-color:rgba(255,255,255,0.0);
+    font-size:1.15rem;
+    padding-right:10px;
+    word-wrap: break-word;
+
+}
+.name-heading,.phone-heading
+{
+font-size:1rem;
+font-weight:600;
+color:#000000;
+text-transform:uppercase;
+}
+
