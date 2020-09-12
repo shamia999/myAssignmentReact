@@ -1,0 +1,38 @@
+.bodyContainer
+{
+    background-color:burlywood;
+}
+.bodyContainer{
+    background-color:white;
+
+}
+.btn1{
+    margin:30px;
+    color:white;
+    padding:1%;
+    background-color: #4CAF50;
+    font-size: 18px;
+    width:9%;
+    border:none;
+    text-transform: uppercase;
+
+}
+
+.name
+{
+text-transform: uppercase;
+font-weight: bolder;
+color:gray;
+font-size: 20px;
+margin:44px;
+font-style: normal;
+
+}
+.phone
+{text-transform: uppercase;
+    font-weight: bolder;
+    color:gray;
+    font-size: 20px;
+    margin-left:598px;
+    
+}
