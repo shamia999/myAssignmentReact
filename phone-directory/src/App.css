@@ -9,7 +9,7 @@
     padding:10px;
     
     color:white;
-    padding:10px;
+    
     font-size:0.9rem;
     width:80px;
     border:none;
@@ -51,3 +51,8 @@ color:#000000;
 text-transform:uppercase;
 }
 
+.dlt-btn
+{
+    background-color: red;
+    color:white;
+}

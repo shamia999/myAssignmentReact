@@ -26,19 +26,26 @@ phone:"9999999"
           <span className=" grid-item name-heading ">Name</span>
           <span className="  grid-item phone-heading">Phone</span>
      </div> 
+
 {
 subscribers.map(sub =>{
+
  return <div key= {sub.id} className="grid-container"> 
+
     <span className="grid-item">{sub.name}</span>
+
     <span className="grid-item">{sub.phone}</span>
-  </div>}
-  )}
-     
-          
 
+<span className="grid-item">
+<button className="custom-btn dlt-btn">Delete</button>
+</span>
 
-
-     </div>
+  </div>
+  }
+  )
+  
+  }
+      </div>
       </div>
     );
   }
