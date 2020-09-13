@@ -1,0 +1,25 @@
+.component-body-container
+{
+    padding:20px;
+    
+}
+
+
+.custom-btn{
+    padding:10px;
+    
+    color:white;
+    
+    font-size:0.9rem;
+    width:80px;
+    border:none;
+    text-transform: uppercase;
+     margin-right:10px;
+     cursor:pointer;
+      outline: none;
+}
+.add-btn
+{
+    background-color: #7ab97a;
+    color:#fff;
+}

@@ -12,12 +12,12 @@
     // TODO 1: Create 'Header' as a functional component to display the heading text. Write necessary import statement(s) too.
 import React from 'react';
 import './Header.css';
-const Header=function(props)
+const Header=function(prop)
 { 
 
      return(
         <div className="header">
-        {props.heading}
+        {prop.heading}
         </div>
         )
 }
