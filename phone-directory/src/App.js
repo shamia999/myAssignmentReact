@@ -4,24 +4,37 @@ import Header from "./Header";
 import "./App.css";
 class App extends Component {
 
+  constructor()
+  { super();
+    
+      this.state={
+      subscribersListToShow:[]
+
+    }
+  }
 
   deleteHandler(msg)
     {
       alert(msg)
     }
+
+
+
+
   render(){
     
-  let subscribers=[
-    {id:1,
-name:"Naila",
-phone:"9999999"
+//   let subscribers=[
+//     {
+//       id:1,
+// name:"Naila",
+// phone:"9999999"
 
-    },
-    {id:2,
-      name:"razia",
-      phone:"8888888"
-    }
-]
+//     },
+//     {id:2,
+//       name:"razia",
+//       phone:"8888888"
+//     }
+// ]
   
                                                                                 
     return (
@@ -35,7 +48,7 @@ phone:"9999999"
      </div> 
 
 {
-subscribers.map(sub =>{
+this.state.subscribersListToShow.map(sub =>{
 
  return <div key= {sub.id} className="grid-container"> 
 
