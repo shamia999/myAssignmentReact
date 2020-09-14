@@ -1,27 +1,14 @@
 import React, { Component } from 'react';
 import Header from "./Header";
 
-import "./App.css";
-class App extends Component {
-
-  constructor()
-  { super();
-    
-      this.state={
-      subscribersListToShow:[]
-
-    }
-  }
-
+import "./ShowSubscribers.css";
+import {Link} from 'react-router-dom';
+class ShowSubscribers extends Component {
   deleteHandler(msg)
-    {
-      alert(msg)
-    }
-
-
-
-
-  render(){
+  {
+    alert(msg);
+  }
+ render(){
     
 //   let subscribers=[
 //     {
@@ -41,14 +28,14 @@ class App extends Component {
       <div>
          <Header heading="phone directory"/>
          <div className="component-body-container">
-           <button className="custom-btn add-btn">Add</button>
+        <Link to="/add"><button className="custom-btn add-btn">Add</button></Link>
          <div className="grid-container heading-container">
           <span className=" grid-item name-heading ">Name</span>
           <span className="  grid-item phone-heading">Phone</span>
      </div> 
 
 {
-this.state.subscribersListToShow.map(sub =>{
+this.props.subscribersList.map(sub =>{
 
  return <div key= {sub.id} className="grid-container"> 
 
@@ -72,7 +59,7 @@ this.state.subscribersListToShow.map(sub =>{
 }
  
 
-export default App;
+export default ShowSubscribers;
 /* TODO 5: Create 'App' as a class component which encompasses all other components in the following order:
   1. Header
   2. Password
