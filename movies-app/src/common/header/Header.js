@@ -1,16 +1,17 @@
 import React,{Component} from 'react';
 import { scryRenderedComponentsWithType } from 'react-dom/test-utils';
-import './Home.css';
-import Header from "../../common/header/Header";
-class Home extends Component{
+import './Header.css';
+import Button from '@material-ui/core/Button';
+
+class Header extends Component{
     render()
     {
         return(
             <div>
-                <Header/>
+         <Button variant="contained">Login</Button>       
             </div>
         )
     }
 
 }
-export default Home;
+export default Header;
