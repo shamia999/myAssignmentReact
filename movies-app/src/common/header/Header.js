@@ -6,7 +6,31 @@ import logo from '../../assets/logo.svg';
 import Modal from 'react-modal';
 import Tab from '@material-ui/core/Tab';
 import Tabs from '@material-ui/core/Tabs';
+import Typography from '@material-ui/core/Typography';
+import FormControl from '@material-ui/core/FormControl';
+import Input from '@material-ui/core/Input';
+import InputLabel from  '@material-ui/core/InputLabel';
 
+
+const customStyles={
+    content:{
+        top:'50%',
+        left:'50%',
+        right:'auto',
+        bottom:'auto',
+        marginRight:'-50%',
+        transform:'translate(-50% , -50%)'
+}
+}
+const tabContainer=function(props)
+{    
+    
+    return(
+         <Typography component='div' style={{padding:0}}>
+             {props.children};
+        </Typography>
+)
+}
 class Header extends Component{
     constructor()
     {
@@ -19,38 +43,60 @@ class Header extends Component{
     }
 
 
-openModalHandler=()=>{
+openModalHandler=()=>
+{
 this.setState({modalIsOpen:true})
     }
+
     closeModalHandler=()=>
     {
         this.setState(
-            {modalIsOpen:false});
+            {
+                modalIsOpen:false
+            });
     }
     tabChangeHandler=(event,value)=>
     {
           this.setState({value});
     }
+
+    
+    
     render()
     {
         return(
-<div>
+                 <div>
             <header className="app-header">
                 <img src={logo}  className='app-logo'alt='logo'/>
             <div className="login-btn">
          <Button variant="contained" color="default"  onClick={this.openModalHandler}> Login</Button>       
             </div>
             </header>
-            <Modal ariaHideApp={false} isOpen={this.state.modalIsOpen} contentLabel="Login" 
-            onRequestClose={this.closeModalHandler}>
+            <Modal ariaHideApp={false} isOpen={this.state.modalIsOpen} 
+            contentLabel="Login" 
+            onRequestClose={this.closeModalHandler}
+            style={customStyles}>
                <Tabs value={this.state.value} onChange={this.tabChangeHandler}>
                    <Tab label='Login'/>
                    <Tab label="Register"/>
                </Tabs>
+               <tabContainer>
+                   <FormControl required>
+                       <InputLabel htmlFor="username">Username</InputLabel>
+                       <input id="userName" type="text"/>
+                   </FormControl>
+
+                   <FormControl required>
+                       <InputLabel htmlFor="password">password</InputLabel>
+                       <input id="password" type="password"/>
+                   </FormControl>
+
+
+
+               </tabContainer>
             </Modal>
             </div>
         )
     }
-
 }
 export default Header;
